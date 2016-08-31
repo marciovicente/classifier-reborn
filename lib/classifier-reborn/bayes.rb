@@ -3,9 +3,10 @@
 # License::   LGPL
 
 require_relative 'category_namer'
+require_relative 'classifier'
 
 module ClassifierReborn
-  class Bayes
+  class Bayes < Classifier
     CategoryNotFoundError = Class.new(StandardError)
 
     # The class can be created with one or more categories, each of which will be
